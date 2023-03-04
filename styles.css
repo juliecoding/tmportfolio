@@ -1,0 +1,145 @@
+:root {
+  /* COLORS */
+  --blue: #264653;
+  --green: #2a9d8f;
+  --yellow: #e9c46a;
+  --orange: #f4a261;
+  --red: #e76f51;
+
+  /* FONTS */
+  --heading: "Zilla Slab", monospace;
+  --copy: "Raleway", serif;
+}
+
+body {
+  font-family: var(--copy);
+}
+
+a {
+  color: inherit;
+}
+
+.main-header {
+  background-image: linear-gradient(
+    to right,
+    var(--blue),
+    var(--blue),
+    var(--green),
+    var(--orange)
+  );
+  font-family: var(--heading);
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 3rem 1rem 0.5rem 1rem;
+}
+
+.main-header h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.nav {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav li {
+  padding: 0 1rem;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  margin-top: 1.5rem;
+}
+
+.portrait img {
+  max-height: 360px;
+}
+
+.section {
+  vertical-align: middle;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-header {
+  font-size: 2rem;
+  color: white;
+  font-family: var(--heading);
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.section-content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.outreach {
+  background-color: var(--green);
+}
+
+.work {
+  background-color: var(--orange);
+}
+
+.education {
+  background-color: var(--red);
+}
+
+.contact {
+  background-color: var(--blue);
+}
+
+.centered-content {
+  max-width: 70vw;
+  margin: auto;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 430px) {
+  .main-header {
+    display: block;
+    padding-bottom: 1.2rem;
+    background-image: linear-gradient(
+      to right,
+      var(--blue),
+      var(--green),
+      var(--orange)
+    );
+  }
+
+  .main-header h1 {
+    text-align: center;
+  }
+
+  .intro {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
+  .nav {
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.5rem;
+    max-width: 80vw;
+    display: block;
+    text-align: center;
+  }
+
+  .nav li {
+    display: inline-block;
+    margin-top: 1.5rem;
+  }
+}
